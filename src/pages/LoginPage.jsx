@@ -11,8 +11,9 @@ const LoginPage = () => {
   const handleLogin = async (role) => {
     try {
       const user = await loginWithGoogle();
-      // You can save user info and role in the state or context
-      // Redirect to appropriate dashboard based on role
+      // Save user info and role in localStorage or state/context as needed
+      localStorage.setItem("userRole", role); // Save user role for later use
+      // Redirect to the appropriate dashboard based on role
       if (role === "JobSeeker") {
         navigate("/job-seeker-dashboard");
       } else if (role === "JobProvider") {
