@@ -5,12 +5,7 @@ import { getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCu291fsKZbwZj3XAAJRDi2TYxUi_4Klxk",
-  authDomain: "cv-app-dev.firebaseapp.com",
-  projectId: "cv-app-dev",
-  storageBucket: "cv-app-dev.appspot.com",
-  messagingSenderId: "177511226442",
-  appId: "1:177511226442:web:7e9d5d4e0d45e721c35ab3"
+
 };
 
 // Initialize Firebase
