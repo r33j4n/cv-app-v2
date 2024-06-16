@@ -13,6 +13,7 @@ const LoginPage = () => {
       const user = await loginWithGoogle();
       // Save user info and role in localStorage or state/context as needed
       localStorage.setItem("userRole", role); // Save user role for later use
+  
       // Redirect to the appropriate dashboard based on role
       if (role === "JobSeeker") {
         navigate("/job-seeker-dashboard");

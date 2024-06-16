@@ -7,7 +7,7 @@ const loginWithGoogle = async () => {
     const result = await signInWithPopup(auth, googleProvider);
     const user = result.user;
     // Save user ID to local storage
-    localStorage.setItem('UserID', user.uid);
+    localStorage.setItem('userID', user.uid);
     return user;
   } catch (error) {
     console.error("Error during login:", error);
